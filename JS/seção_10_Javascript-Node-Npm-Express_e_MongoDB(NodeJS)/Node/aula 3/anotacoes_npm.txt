@@ -1,0 +1,22 @@
+comandos principais node npm: 
+npm install << pacote >>@latest // instala a ultima versão do pacote
+npm install express@latest
+// variações com escolha de versão
+npm install express@4.x // ou express@4.0.0
+// instalar apenas como desenvolvedor
+npm install express --save-dev
+// intalar a versão de produção ou reverter a instalação desenvolvedor
+npm install express --save-prod
+// tornar o pacote inibido para a atualização
+npm install express -E 
+// desinstalar
+npm uninstall express
+// visualizar instalações
+npm ls 
+observação:
+ao se instalar no arquivo package.json ocorre as mudanças e registro da instalação
+onde os simbolos na frente da versão instalada representam o seguinte:
+^ =  pode instalar e atualizar para qualquer versão
+~ =  permite atualizar apenas dentro da versão principal, por exemplo 4.x.x até 4.y.y onde x e y podem ser numeros de zero a nove, 
+portanto podendo ir até 4.9.9
+sem simbolo = determina que a versão não pode ser alterada
